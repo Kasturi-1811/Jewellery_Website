@@ -1,0 +1,20 @@
+button:hover{
+    box-shadow:0 0 20px #FD1C03;
+    background-color:white;
+    color:tomato;
+}
+button:active{
+    transform:translateY(4px);
+}
+.type{
+    border-radius:25px 0px 25px 0px;
+    background-color: white;
+    width:45%;
+    height:20%;
+    font-size:30;
+    padding-right:10;
+    margin:30px 5px;
+}
+.complete{
+    background-image: url('jewellery3.png');
+}

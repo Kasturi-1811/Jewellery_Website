@@ -1,0 +1,16 @@
+button:hover{
+    color: #ffd700;
+    box-shadow: 0 0  15px red;
+}
+.type{
+    border-radius:15px 0px 15px 0px;
+    font-size:35;
+    background-color:white;
+    border-color:green;
+    margin:40px 10px;
+    width:25%;
+    height:29%;
+}
+button:active{
+    transform: translateY(4px);
+}
