@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jewellery Store</title>
+    <style>
+        /* Inline CSS for simplicity */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('images/jewellery2.png');
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/logo.jpg" width="100%" height="auto" alt="Logo">
+
+    <!-- Main Navigation -->
+    <div id="main-nav">
+        <h1>Welcome to the Jewellery Store</h1>
+        <button onclick="showSection('girl-section')">Girl</button>
+        <button onclick="showSection('boy-section')">Boy</button>
+        <button onclick="showSection('couple-section')">Couple</button>
+    </div>
+
+    <!-- Girl Section 
+    <div id="girl-section" class="hidden">
+        <h2>Select Gold, Silver, or Platinum for Girls</h2>
+        <button onclick="showSection('girlsgold')">Gold</button><img src="images/gold2.jpeg" style="width:250px;">
+        <button onclick="showSection('girlsilver')">Silver</button><img src="images/silver.jpg" style="width:250px;">
+        <button onclick="showSection('girlplatinum')">Platinum</button><img src="images/platinum2.png" style="width:250px;">
+        <button onclick="showSection('main-nav')">Back</button>
+    </div>   -->
+
+    <div id="girl-section" class="hidden">
+        <h2>Select Gold, Silver, or Platinum for Girls</h2>
+    
+        <div class="image-container">
+            <img src="images/gold2.jpeg" style="width:250px;" alt="Gold">
+            <button onclick="showSection('girlsgold')">Gold</button>
+        </div>
+    
+        <div class="image-container">
+            <img src="images/silver.jpg" style="width:250px;" alt="Silver">
+            <button onclick="showSection('girlsilver')">Silver</button>
+        </div>
+    
+        <div class="image-container">
+            <img src="images/platinum2.png" style="width:250px;" alt="Platinum">
+            <button onclick="showSection('girlplatinum')">Platinum</button>
+        </div>
+    
+        <button onclick="showSection('main-nav')">Back</button>
+    </div>
+    
+
+    <!-- Boy Section -->
+    <div id="boy-section" class="hidden">
+        <h2>Select Gold, Silver, or Platinum for Boys</h2>
+
+        <div class="image-container">
+            <img src="images/gold2.jpeg" style="width:250px;" alt="Gold">
+            <button onclick="showSection('boygold')">Gold</button>
+        </div>
+    
+        <div class="image-container">
+            <img src="images/silver.jpg" style="width:250px;" alt="Silver">
+            <button onclick="showSection('boysilver')">Silver</button>
+        </div>
+    
+        <div class="image-container">
+            <img src="images/platinum2.png" style="width:250px;" alt="Platinum">
+            <button onclick="showSection('boyplatinum')">Platinum</button>
+        </div>
+    
+        <button onclick="showSection('main-nav')">Back</button>
+    </div>
+
+        <!-- 
+        <button onclick="showSection('boysgold')">Gold</button>
+        <button onclick="showSection('boysilver')">Silver</button>
+        <button onclick="showSection('boyplatinum')">Platinum</button>
+        <button onclick="showSection('main-nav')">Back</button>
+    -->
+
+    <!-- Couple Section -->
+    <div id="couple-section" class="hidden">
+        <h2>Select Gold, Silver, or Platinum for Couples</h2>
+
+        <div class="image-container">
+            <img src="images/gold2.jpeg" style="width:250px;" alt="Gold">
+            <button onclick="showSection('couplegold')">Gold</button>
+        </div>
+    
+        <div class="image-container">
+            <img src="images/silver.jpg" style="width:250px;" alt="Silver">
+            <button onclick="showSection('couplesilver')">Silver</button>
+        </div>
+    
+        <div class="image-container">
+            <img src="images/platinum2.png" style="width:250px;" alt="Platinum">
+            <button onclick="showSection('coupleplatinum')">Platinum</button>
+        </div>
+    
+        <button onclick="showSection('main-nav')">Back</button>
+    </div>
+
+        <!--
+        <button onclick="showSection('couplesgold')">Gold</button>
+        <button onclick="showSection('couplessilver')">Silver</button>
+        <button onclick="showSection('couplesplatinum')">Platinum</button>
+        <button onclick="showSection('main-nav')">Back</button>
+    -->
+
+
+    <!-- Gold Section for Girls -->
+    <div id="girlsgold" class="hidden">
+        <h2>Gold Items for Girls</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Studs</button>
+        <button>Bracelet</button>
+        <button class="type">Ear rings</button>
+        <button class="type">Bangles</button>
+        <button class="type">Waist Belt</button>
+        <button class="type">Armelt</button>
+        <button class="type">Toe ring</button>
+        <button class="type">Maang tikka(Papidi Billa)</button>
+        <button onclick="showSection('girl-section')">Back</button>
+    </div>
+
+    <!-- Silver Section for Girls -->
+    <div id="girlsilver" class="hidden">
+        <h2>Silver Items for Girls</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Bracelet</button>
+        <button onclick="showSection('girl-section')">Back</button>
+    </div>
+
+    <!-- Platinum Section for Girls -->
+    <div id="girlplatinum" class="hidden">
+        <h2>Platinum Items for Girls</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Studs</button>
+        <button>Bracelet</button>
+        <button onclick="showSection('girl-section')">Back</button>
+    </div>
+
+    <!-- Gold Section for Boys -->
+    <div id="boysgold" class="hidden">
+        <h2>Gold Items for Boys</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Studs</button>
+        <button>Bracelet</button>
+        <button onclick="showSection('boy-section')">Back</button>
+    </div>
+
+    <!-- Silver Section for Boys -->
+    <div id="boysilver" class="hidden">
+        <h2>Silver Items for Boys</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Studs</button>
+        <button>Bracelet</button>
+        <button onclick="showSection('boy-section')">Back</button>
+    </div>
+
+    <!-- Platinum Section for Boys -->
+    <div id="boyplatinum" class="hidden">
+        <h2>Platinum Items for Boys</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Studs</button>
+        <button>Bracelet</button>
+        <button onclick="showSection('boy-section')">Back</button>
+    </div>
+
+    <!-- Gold Section for Couples -->
+    <div id="couplesgold" class="hidden">
+        <h2>Gold Items for Couples</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Bracelets</button>
+        <button onclick="showSection('couple-section')">Back</button>
+    </div>
+
+    <!-- Silver Section for Couples -->
+    <div id="couplessilver" class="hidden">
+        <h2>Silver Items for Couples</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Bracelets</button>
+        <button onclick="showSection('couple-section')">Back</button>
+    </div>
+
+    <!-- Platinum Section for Couples -->
+    <div id="couplesplatinum" class="hidden">
+        <h2>Platinum Items for Couples</h2>
+        <button>Chains</button>
+        <button>Rings</button>
+        <button>Bracelets</button>
+        <button onclick="showSection('couple-section')">Back</button>
+    </div>
+
+    <!-- JavaScript to control visibility -->
+    <script>
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('div[id]').forEach((div) => {
+                div.classList.add('hidden');
+            });
+
+            // Show the selected section
+            document.getElementById(section).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
