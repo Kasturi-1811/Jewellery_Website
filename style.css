@@ -6,15 +6,41 @@ button:hover{
 button:active{
     transform:translateY(4px);
 }
-.type{
+.main-section{
     border-radius:25px 0px 25px 0px;
-    background-color: white;
-    width:45%;
-    height:20%;
-    font-size:30;
-    padding-right:10;
-    margin:30px 5px;
+    background-color:white;
+    text-align: center;
 }
-.complete{
-    background-image: url('jewellery3.png');
+#girl-section,#boy-section,#couple-section{
+    background-color: #93FFE8;
+}
+.hidden{
+    display: none;
+}
+.image-container{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #93FFE8;
+ 
+}
+#girlgold,#girlsilver,#girlplatinum,#boygold,#boysilver,#boyplatinum,#couplegold,#couplesilver,#coupleplatinum{
+    background-image: url('images/jewellery2.png');
+    word-wrap: break-word; 
+    justify-content: space-between;
+    margin-right: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+h2{
+    text-align: center;
+}
+
+button{
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
 }

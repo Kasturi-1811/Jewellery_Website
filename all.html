@@ -6,57 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jewellery Store</title>
-    <style>
-        /* Inline CSS for simplicity */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-image: url('images/jewellery2.png');
-        }
-        .hidden {
-            display: none;
-        }
-        button {
-            margin: 10px;
-        }
-    </style>
 </head>
 <body>
-
-    <img src="images/logo.jpg" width="100%" height="auto" alt="Logo">
 
     <!-- Main Navigation -->
     <div id="main-nav">
         <h1>Welcome to the Jewellery Store</h1>
-        <button onclick="showSection('girl-section')">Girl</button>
-        <button onclick="showSection('boy-section')">Boy</button>
-        <button onclick="showSection('couple-section')">Couple</button>
-    </div>
+        <img src="images/logo.jpg" width="100%" height="auto" alt="Logo">
 
-    <!-- Girl Section 
-    <div id="girl-section" class="hidden">
-        <h2>Select Gold, Silver, or Platinum for Girls</h2>
-        <button onclick="showSection('girlsgold')">Gold</button><img src="images/gold2.jpeg" style="width:250px;">
-        <button onclick="showSection('girlsilver')">Silver</button><img src="images/silver.jpg" style="width:250px;">
-        <button onclick="showSection('girlplatinum')">Platinum</button><img src="images/platinum2.png" style="width:250px;">
-        <button onclick="showSection('main-nav')">Back</button>
-    </div>   -->
+        <div class="main-section">
+            <button onclick="showSection('girl-section')">Girl</button>
+            <button onclick="showSection('boy-section')">Boy</button>
+            <button onclick="showSection('couple-section')">Couple</button>
+        </div>
+    </div>
 
     <div id="girl-section" class="hidden">
         <h2>Select Gold, Silver, or Platinum for Girls</h2>
     
         <div class="image-container">
-            <img src="images/gold2.jpeg" style="width:250px;" alt="Gold">
-            <button onclick="showSection('girlsgold')">Gold</button>
+            <img src="images/gold2.jpeg" style="width:250px; padding-bottom: 5px;padding-top: 5px;" alt="Gold">
+            <button onclick="showSection('girlgold')">Gold</button>
         </div>
     
         <div class="image-container">
-            <img src="images/silver.jpg" style="width:250px;" alt="Silver">
+            <img src="images/silver.jpg" style="width:250px; padding-bottom: 5px " alt="Silver">
             <button onclick="showSection('girlsilver')">Silver</button>
         </div>
     
         <div class="image-container">
-            <img src="images/platinum2.png" style="width:250px;" alt="Platinum">
+            <img src="images/platinum2.png" style="width:250px; padding-bottom: 5px " alt="Platinum">
             <button onclick="showSection('girlplatinum')">Platinum</button>
         </div>
     
@@ -69,62 +48,45 @@
         <h2>Select Gold, Silver, or Platinum for Boys</h2>
 
         <div class="image-container">
-            <img src="images/gold2.jpeg" style="width:250px;" alt="Gold">
+            <img src="images/gold2.jpeg" style="width:250px; padding-bottom: 5px ;padding-top: 5px" alt="Gold">
             <button onclick="showSection('boygold')">Gold</button>
         </div>
     
         <div class="image-container">
-            <img src="images/silver.jpg" style="width:250px;" alt="Silver">
+            <img src="images/silver.jpg" style="width:250px; padding-bottom: 5px " alt="Silver">
             <button onclick="showSection('boysilver')">Silver</button>
         </div>
     
         <div class="image-container">
-            <img src="images/platinum2.png" style="width:250px;" alt="Platinum">
+            <img src="images/platinum2.png" style="width:250px;  padding-bottom: 5px " alt="Platinum">
             <button onclick="showSection('boyplatinum')">Platinum</button>
         </div>
     
         <button onclick="showSection('main-nav')">Back</button>
     </div>
-
-        <!-- 
-        <button onclick="showSection('boysgold')">Gold</button>
-        <button onclick="showSection('boysilver')">Silver</button>
-        <button onclick="showSection('boyplatinum')">Platinum</button>
-        <button onclick="showSection('main-nav')">Back</button>
-    -->
-
     <!-- Couple Section -->
     <div id="couple-section" class="hidden">
         <h2>Select Gold, Silver, or Platinum for Couples</h2>
 
         <div class="image-container">
-            <img src="images/gold2.jpeg" style="width:250px;" alt="Gold">
+            <img src="images/gold2.jpeg" style="width:250px; padding-bottom: 5px ;padding-top: 5px" alt="Gold">
             <button onclick="showSection('couplegold')">Gold</button>
         </div>
     
         <div class="image-container">
-            <img src="images/silver.jpg" style="width:250px;" alt="Silver">
+            <img src="images/silver.jpg" style="width:250px;  padding-bottom: 5px ;" alt="Silver">
             <button onclick="showSection('couplesilver')">Silver</button>
         </div>
     
         <div class="image-container">
-            <img src="images/platinum2.png" style="width:250px;" alt="Platinum">
+            <img src="images/platinum2.png" style="width:250px; padding-bottom: 5px ;" alt="Platinum">
             <button onclick="showSection('coupleplatinum')">Platinum</button>
         </div>
     
         <button onclick="showSection('main-nav')">Back</button>
     </div>
-
-        <!--
-        <button onclick="showSection('couplesgold')">Gold</button>
-        <button onclick="showSection('couplessilver')">Silver</button>
-        <button onclick="showSection('couplesplatinum')">Platinum</button>
-        <button onclick="showSection('main-nav')">Back</button>
-    -->
-
-
     <!-- Gold Section for Girls -->
-    <div id="girlsgold" class="hidden">
+    <div id="girlgold" class="hidden">
         <h2>Gold Items for Girls</h2>
         <button>Chains</button>
         <button>Rings</button>
@@ -159,7 +121,7 @@
     </div>
 
     <!-- Gold Section for Boys -->
-    <div id="boysgold" class="hidden">
+    <div id="boygold" class="hidden">
         <h2>Gold Items for Boys</h2>
         <button>Chains</button>
         <button>Rings</button>
@@ -189,7 +151,7 @@
     </div>
 
     <!-- Gold Section for Couples -->
-    <div id="couplesgold" class="hidden">
+    <div id="couplegold" class="hidden">
         <h2>Gold Items for Couples</h2>
         <button>Chains</button>
         <button>Rings</button>
@@ -198,7 +160,7 @@
     </div>
 
     <!-- Silver Section for Couples -->
-    <div id="couplessilver" class="hidden">
+    <div id="couplesilver" class="hidden">
         <h2>Silver Items for Couples</h2>
         <button>Chains</button>
         <button>Rings</button>
@@ -207,14 +169,13 @@
     </div>
 
     <!-- Platinum Section for Couples -->
-    <div id="couplesplatinum" class="hidden">
+    <div id="coupleplatinum" class="hidden">
         <h2>Platinum Items for Couples</h2>
         <button>Chains</button>
         <button>Rings</button>
         <button>Bracelets</button>
         <button onclick="showSection('couple-section')">Back</button>
     </div>
-
     <!-- JavaScript to control visibility -->
     <script>
         function showSection(section) {
