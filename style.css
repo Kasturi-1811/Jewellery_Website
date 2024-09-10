@@ -1,5 +1,5 @@
 button:hover{
-    box-shadow:0 0 20px #FD1C03;
+    box-shadow:0 0 20px #E41B17;
     background-color:white;
     color:tomato;
 }
@@ -7,8 +7,7 @@ button:active{
     transform:translateY(4px);
 }
 .main-section{
-    border-radius:25px 0px 25px 0px;
-    background-color:white;
+
     text-align: center;
 }
 #girl-section,#boy-section,#couple-section{
@@ -42,5 +41,6 @@ button{
     text-align: center;
     margin: 10px;
     padding: 10px;
-    background-color: white;
+    font-weight: bold;
+    border-radius:20px 20px 20px 20px;
 }
