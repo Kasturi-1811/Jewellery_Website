@@ -5,24 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Jewellery Store</title>
-</head>
+    <title style="font-style: cinzel decorative;">KJ</title>
+    <style>
+        #main-nav h1{
+            background-color: rgb(127, 255, 170);
+            margin-bottom: 0 ; 
+            border-bottom: 1px;
+            text-align: center;
+            padding: 10px;
+            font-size: smaller;
+            overflow-x: hidden;
+        }
+        @media (min-width:600px) {
+            
+            ul li{
+                list-style-type: none;
+                margin-top: 10px;
+                text-align: center;
+                display:block;
+                text-decoration: none;
+            }
+            #main-section{
+                display: flex;
+                justify-content: space-between;
+                margin-left: 0;
+            }
+            #male,#female,#couple{
+                width: 500px;
+                height: 500px;
+            }
+            #logo 
+            {
+                width: 100%;
+                height: auto;
+                position: sticky;
+                right: 0;
+                background-color: white;
+            }
+        }
+        @media (max-width:599px){
+            #main-section img{
+                width: 300px;
+                border-radius: 5px;
+            }
+            ul li{
+                list-style-type: none;
+                margin-top: 10px;
+                align-items: center;
+                text-align: center;
+                display: block;
+                text-decoration: none;
+            }
+            
+        }
+    </style>
 <body>
-
     <!-- Main Navigation -->
     <div id="main-nav">
-        <h1>Welcome to the Jewellery Store</h1>
-        <img src="images/logo.jpg" width="100%" height="auto" alt="Logo">
-
-        <div class="main-section">
-            <button onclick="showSection('girl-section')">Girl</button>
-            <button onclick="showSection('boy-section')">Boy</button>
-            <button onclick="showSection('couple-section')">Couple</button>
+        <h1>Step in with complete trust</h1>
+        <img id="logo" src="images/logo.jpg" width="100%" height="auto" alt="Logo">
+        <div id="main-section">
+            <ul>
+                <li><img id="female" onclick="showSection('girl-section')" src="girl.jpg" alt="Girl"></li>
+                <li>Female</li>
+            </ul>
+            <ul>
+                <li><img id="male" onclick="showSection('boy-section')" src="boy1.jpg" alt="Male"></li>
+                <li>Male</li>
+            </ul>
+            <ul>
+                <li><img id="couple" onclick="showSection('couple-section')" src="couple.jpeg" alt="Couple"></li>
+                <li>Couple</li>
+            </ul>
         </div>
     </div>
-
     <div id="girl-section" class="hidden">
-        <h2>Select Gold, Silver, or Platinum for Girls</h2>
+        <h2 style="background-color: rgb(0, 255, 17);padding-block: 20px;text-align: center;">Select Gold, Silver, or Platinum for Girls</h2>
     
         <div class="image-container">
             <img src="images/gold2.jpeg" style="width:250px; padding-bottom: 5px;padding-top: 5px;" alt="Gold">
