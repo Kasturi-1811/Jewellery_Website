@@ -1,14 +1,33 @@
 
 h1{
-    background-color: rgb(127, 255, 170);
+    background-color: rgb(65, 234, 14);
     margin-bottom: 0 ; 
     border-bottom: 1px;
     text-align: center;
     padding: 10px;
-    font-size: smaller;
+    font-size: 15px;
     overflow-x: hidden;
 }
-@media (min-width:600px) {
+h2{
+    text-align: center;
+    margin-bottom: 2px;
+    font-family: 'constantia';
+}
+.hidden{
+    display: none !important;
+}
+#girl-section #boy-section #couple-section{
+    background-image: url('imagess/backgroun3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: none; 
+    
+    background-position: center;
+    height: 100vh; 
+    width: 100%;
+}
+
+@media (min-width:1200px) {
     ul{
         float: left;
         margin-right: 5px;
@@ -50,12 +69,12 @@ h1{
         border-radius: 5px;
         border: 2px solid rgb(74, 72, 72);
     }
-    #girl-section {
-        background-image: url('imagess/background7.jpg');
+    #girl-section #boy-section #couple-section{
+        background-image: url('imagess/background9.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         filter: none; 
-        backdrop-filter: none;
+        
         background-position: center;
         height: 100vh; 
         width: 100%;
@@ -73,16 +92,20 @@ h1{
         cursor: pointer;
     }
     .girlgolds{
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
         border-radius: 5px;
         margin-left: 25px;
 
     }
-    h2{
-        text-align: center;
-        margin-top: 10px;
+    .girlgolds:hover{
+        width: 205px;
+        height: 205px;
+        border-radius: 5px;
+        margin-left: 25px;
+        box-shadow: 0 0  15px rgb(51, 255, 0);
     }
+    
     .ornaments{
         display: flex;
         flex-wrap: wrap;
@@ -95,29 +118,547 @@ h1{
         border-radius: 10px;
         margin-left: 40px;
     }
-    .slideshow-container {
-        width: 100vw;
-        height: 100vh;
+    .slideshow-container{
         overflow: hidden;
+    }
+    .slideshow-container figure{
         position: relative;
+        width: 500%;
+        margin:0;
+        left:0;
+        animation: 20s slider infinite;
     }
-    
-    .slide {
-        width: 97.5%;
-        height: 90%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
+    .slideshow-container figure img{
+        float: left;
+        width: 20%;
+        
     }
-    
+    @keyframes slideshow-container {
+        0%{
+            left: 0;
+
+        }
+        20%{
+            left: 0;
+        }
+        
+    }
+   
     /* Show only the first image initially */
     .slide:first-child {
         opacity: 1;
     }
+    #about {
+        color: rgb(51, 255, 0);
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(3, 71, 3);
+        margin-top: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+   
+    #head{
+        margin-bottom: 10px;
+    }
+    li{
+        font-size: 20px;
+    }
+    #main-nav{
+        display: flex;
+        justify-content: space-between; /* Aligns sections properly */
+        flex-wrap: wrap;
+    }
+    .girlgoldsider {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(3, 71, 3);
+        width: 300px;
+        height: 100%;
+        box-sizing: border-box;
+        position: fixed;
+        
+    }
+
+    .girlgoldsider h2{
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        text-transform:uppercase ;
+    }
+
+
+    #girlchain{
+        display: flex;
+        position: relative;
+    }
+    #girlchain ul li{
+        padding: 20px;
+       
+    }
+   
+    #girlchain ul li {
+        text-decoration: none;
+        color: rgb(51, 255, 0);
+        display: block;
+        
+        text-align: center;
+        padding: 2px;
+    }
+    .girlgoldimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        margin-left: 350px;
+        padding: 20px;
+        position:sticky;
+        gap: 20px 50px;
+       
+    }
+    .girlgoldimages img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    }
+    .girlgoldimages h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+}
+@media(min-width:600px) and (max-width:719px){
+    #main-section img{
+        width: 350px;
+        height: 350px;
+        border-radius: 5px;
+    }
+    ul li{
+        list-style-type: none;
+        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+    }
+    .images{
+        width: 300px;
+        height: 300px;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: 2px solid rgb(74, 72, 72);
+    }  
+    #about {
+        color: rgb(51, 255, 0);
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(3, 71, 3);
+        margin-top: 20%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .images:hover{
+        width: 350px;
+        height: 350px;
+        border-radius: 5px;
+        border: 2px solid rgb(74, 72, 72);
+    }
+    #male,#female,#couple{
+        margin: 10px;
+        border-radius: 5px;
+        width: 370px;
+        height: 370px;
+    }
+    #male:hover,#female:hover,#couple:hover{
+        margin: 5px;
+        border-radius: 5px;
+        width: 380px;
+        height: 380px;
+        box-shadow: 0 0  15px rgb(5, 72, 5);
+    }
+    #girl-section #boy-section #couple-section{
+        background-image: url('imagess/background9.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: none; 
+        
+        background-position: center;
+        height: 100vh; 
+        width: 100%;
+    }
+    .girlgolds{
+        width: 190px;
+        height: 190px;
+        border-radius: 5px;
+        margin-left: 25px;
+
+    }
+    .girlgolds:hover{
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        margin-left: 5px;
+        box-shadow: 0 0  5px rgb(51, 255, 0);
+    }
+    .ornaments{
+        display: flex;
+        flex-wrap: wrap;
+      border-bottom: 0.5px dotted rgba(0,0,0,0.3);
+      margin-left: 5px;
+
+    }
+    .ornaments .other{
+        width: 210px;
+        height: 210px;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+    .slideshow-container{
+        overflow: hidden;
+    }
+    .slideshow-container figure{
+        position: sticky;
+        width: 500%;
+        margin:0;
+        left:0;
+        animation: 20s slider infinite;
+    }
+    .slideshow-container figure img{
+        float: left;
+        width: 20%;
+        
+    }
+    @keyframes slideshow-container {
+        0%{
+            left: 0;
+
+        }
+        20%{
+            left: 0;
+        }
+        
+    }
+    .slide:first-child {
+        opacity: 1;
+    }
+   
+}
+@media(min-width:720px) and (max-width:999px){
+    #main-section img{
+        width: 390px;
+        height: 390px;
+        border-radius: 5px;
+    }
+    ul li{
+        list-style-type: none;
+        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+    }
+    .images{
+        width: 390px;
+        height: 390px;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: 2px solid rgb(74, 72, 72);
+    }  
+    #about {
+        color: rgb(51, 255, 0);
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(3, 71, 3);
+        margin-top: 20%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .images:hover{
+        width: 400px;
+        height: 400px;
+        border-radius: 5px;
+        border: 2px solid rgb(74, 72, 72);
+    }
+    #male,#female,#couple{
+        margin: 10px;
+        border-radius: 5px;
+        width: 390px;
+        height: 390px;
+    }
+    #male:hover,#female:hover,#couple:hover{
+        margin: 5px;
+        border-radius: 5px;
+        width: 400px;
+        height: 400px;
+        box-shadow: 0 0  15px rgb(5, 72, 5);
+    }
+    #girl-section #boy-section #couple-section{
+        background-image: url('imagess/background9.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: none; 
+        
+        background-position: center;
+        height: 100vh; 
+        width: 100%;
+    }
+    .girlgolds{
+        width: 190px;
+        height: 190px;
+        border-radius: 5px;
+        margin-left: 25px;
+
+    }
+    .girlgolds:hover{
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        margin-left: 5px;
+        box-shadow: 0 0  5px rgb(51, 255, 0);
+    }
+    .ornaments{
+        display: flex;
+        flex-wrap: wrap;
+      border-bottom: 0.5px dotted rgba(0,0,0,0.3);
+      margin-left: 5px;
+
+    }
+    .ornaments .other{
+        width: 210px;
+        height: 210px;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+    .slideshow-container{
+        overflow: hidden;
+    }
+    .slideshow-container figure{
+        position: sticky;
+        width: 500%;
+        margin:0;
+        left:0;
+        animation: 20s slider infinite;
+    }
+    .slideshow-container figure img{
+        float: left;
+        width: 20%;
+        
+    }
+    @keyframes slideshow-container {
+        0%{
+            left: 0;
+
+        }
+        20%{
+            left: 0;
+        }
+        
+    }
+    .slide:first-child {
+        opacity: 1;
+    }
+   
+}
+@media(min-width:1000px) and (max-width:1199px)
+{
+    ul{
+        float: left;
+        margin-right: 5px;
+        padding: 0 5px 0 5px;
+    } 
+     ul li{
+        list-style-type: none;
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+       
+    }
     
+    #male,#female,#couple{
+        margin: 10px;
+        border-radius: 5px;
+        width: 350px;
+        height: 350px;
+    }
+    #male:hover,#female:hover,#couple:hover{
+        margin: 5px;
+        border-radius: 5px;
+        width: 360px;
+        height: 360px;
+        box-shadow: 0 0  15px rgb(5, 72, 5);
+    }
+    .images{
+        width: 340px;
+        height: 340px;
+        margin-top: 20%;
+        margin-right: 10px;
+        margin-left: 30px;
+        border-radius: 5px;
+        border: 2px solid rgb(74, 72, 72);
+    }   
+    .images:hover{
+        width: 350px;
+        height: 350px;
+        border-radius: 5px;
+        border: 2px solid rgb(74, 72, 72);
+    }
+    #girl-section #boy-section #couple-section{
+        background-image: url('imagess/background9.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: none; 
+        
+        background-position: center;
+        height: 100vh; 
+        width: 100%;
+    }
+    .button {
+        
+        font-size: 20px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .girlgolds{
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        margin-left: 25px;
+
+    }
+    .girlgolds:hover{
+        width: 205px;
+        height: 205px;
+        border-radius: 5px;
+        margin-left: 25px;
+        box-shadow: 0 0  15px rgb(51, 255, 0);
+    }
+    
+    .ornaments{
+        display: flex;
+        flex-wrap: wrap;
+      border-bottom: 0.5px dotted rgba(0,0,0,0.3);
+
+    }
+    .ornaments .other{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        margin-left: 40px;
+    }
+    .slideshow-container{
+        overflow: hidden;
+    }
+    .slideshow-container figure{
+        position: relative;
+        width: 500%;
+        margin:0;
+        left:0;
+        animation: 20s slider infinite;
+    }
+    .slideshow-container figure img{
+        float: left;
+        width: 20%;
+        
+    }
+    @keyframes slideshow-container {
+        0%{
+            left: 0;
+
+        }
+        20%{
+            left: 0;
+        }
+        
+    }
+   
+    /* Show only the first image initially */
+    .slide:first-child {
+        opacity: 1;
+    }
+    #about {
+        color: rgb(51, 255, 0);
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(3, 71, 3);
+        margin-top: 90%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+   
+    #head{
+        margin-bottom: 10px;
+    }
+    li{
+        font-size: 20px;
+    }
+    #main-nav{
+        display: flex;
+        justify-content: space-between; /* Aligns sections properly */
+        flex-wrap: wrap;
+    }
+    .girlgoldsider {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(3, 71, 3);
+        width: 300px;
+        height: 100%;
+        box-sizing: border-box;
+        position: fixed;
+        
+    }
+
+    .girlgoldsider h2{
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        text-transform:uppercase ;
+    }
+
+
+    #girlchain{
+        display: flex;
+        position: relative;
+    }
+    #girlchain ul li{
+        padding: 20px;
+       
+    }
+   
+    #girlchain ul li {
+        text-decoration: none;
+        color: rgb(51, 255, 0);
+        display: block;
+        
+        text-align: center;
+        padding: 2px;
+    }
+    .girlgoldimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        margin-left: 350px;
+        padding: 20px;
+        position:sticky;
+        gap: 20px 50px;
+       
+    }
+    .girlgoldimages img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    }
+    .girlgoldimages h3{
+        font-size: 20px;
+        text-align: center;
+    }
 }
 @media (max-width:599px){
     #main-section img{
@@ -139,10 +680,166 @@ h1{
         border-radius: 5px;
         border: 2px solid rgb(74, 72, 72);
     }  
-    
+    #about {
+        color: rgb(51, 255, 0);
+        text-align: center;
+        font-size: 17px;
+        background-color: rgb(3, 71, 3);
+       margin-top: 20%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .images:hover{
+        width: 320px;
+        height: 320px;
+        border-radius: 5px;
+        border: 2px solid rgb(74, 72, 72);
+    }   
+    #male,#female,#couple{
+        margin: 10px;
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+    }
+    #male:hover,#female:hover,#couple:hover{
+        margin: 5px;
+        border-radius: 5px;
+        width: 320px;
+        height: 320px;
+        box-shadow: 0 0  15px rgb(5, 72, 5);
+    }
+    #girl-section #boy-section #couple-section{
+        background-image: url('imagess/background8.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: none; 
+        background-position: center;
+        height: 100vh; 
+        width: 100%;
+    }
+    .girlgolds{
+        width: 170px;
+        height: 170px;
+        border-radius: 5px;
+        margin-left: 10px;
+
+    }
+    .girlgolds:hover{
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+        margin-left: 5px;
+        box-shadow: 0 0  5px rgb(51, 255, 0);
+    }
+    .ornaments{
+        display: flex;
+        flex-wrap: wrap;
+      border-bottom: 0.5px dotted rgba(0,0,0,0.3);
+      margin-left: 5px;
+
+    }
+    .ornaments .other{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+    .slideshow-container{
+        overflow: hidden;
+    }
+    .slideshow-container figure{
+        position: sticky;
+        width: 500%;
+        margin:0;
+        left:0;
+        animation: 20s slider infinite;
+    }
+    .slideshow-container figure img{
+        float: left;
+        width: 20%;
+        
+    }
+    @keyframes slideshow-container {
+        0%{
+            left: 0;
+
+        }
+        20%{
+            left: 0;
+        }
+        
+    }
+    .slide:first-child {
+        opacity: 1;
+    }
+    #head{
+        margin-bottom: 10px;
+    }
+    li{
+        font-size: 20px;
+    }
+    #main-nav{
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+    .girlgoldsider {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(3, 71, 3);
+        width: 200px;
+        height: 100%;
+        box-sizing: border-box;
+        position: fixed;
+        
+    }
+
+    .girlgoldsider h2{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-transform:uppercase ;
+    }
+    #girlchain{
+        display: flex;
+        position: relative;
+    }
+    #girlchain ul li{
+        padding: 20px;
+       
+    }
+   
+    #girlchain ul li {
+        text-decoration: none;
+        color: rgb(51, 255, 0);
+        display: block;   
+        text-align: center;
+        padding: 2px;
+    }
+    .girlgoldimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        margin-left: 170px;
+        padding: 20px;
+        position:sticky;
+        gap: 20px 50px;
+       
+    }
+    .girlgoldimages img {
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+    }
+    .girlgoldimages h3{
+        font-size: 15px;
+        text-align: center;
+    }
+
+   
 }
-.hidden{
-    display: none;
-}
+
 
 

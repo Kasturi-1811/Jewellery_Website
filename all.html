@@ -6,27 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title style="font-style: cinzel decorative;">KJ</title>
+    <link rel="icon" href="icon_path" type="image/icon type">
+</head>
     
 <body>
     <!-- Main Navigation -->
     <div id="main-nav">
-        <div id="logo">
-        <h1>Step in with complete trust</h1>
-        <img id="logo" src="images/logo.jpg" width="100%" height="auto" alt="Logo">
-        </div>
-        <div id="main-section">
-            <ul>
-                <li><img id="female" onclick="showSection('girl-section')" src="images/girl.jpg" alt="Girl"></li>
-                <li>Female</li>
-            </ul>
-            <ul>
-                <li><img id="male" onclick="showSection('boy-section')" src="images/boy1.jpg" alt="Male"></li>
-                <li>Male</li>
-            </ul>
-            <ul>
-                <li><img id="couple" onclick="showSection('couple-section')" src="images/couple.jpeg" alt="Couple"></li>
-                <li>Couple</li>
-            </ul>
+        <div>
+            <div id="logo">
+                <h1>Step in with complete trust</h1>
+                <img id="logo" src="images/logo.jpg" width="100%" height="auto" alt="Logo">
+            </div>
+            <div id="main-section">
+                <ul>
+                    <li><img id="female" onclick="showSection('girl-section')" src="images/girl.jpg" alt="Girl"></li>
+                    <li>Female</li>
+                </ul>
+                <ul>
+                    <li><img id="male" onclick="showSection('boy-section')" src="images/boy1.jpg" alt="Male"></li>
+                    <li>Male</li>
+                </ul>
+                <ul>
+                    <li><img id="couple" onclick="showSection('couple-section')" src="images/couple.jpeg" alt="Couple"></li>
+                    <li>Couple</li>
+                </ul>
+            </div>
+            <div id="about">
+                
+                    <h2 id="head">About us</h2>
+                    <p>This website is for viewing the models of the items that we can make for you. If you like any item share with us.</p><h4> Contacts are </h4>
+                    <p>Phone Number : +91 12345 67890</p><p>Email : kj@gmail.com  </p>
+                    <p>You can conntact us at any time</p>
+            
+            </div>
         </div>
     </div>
     <div id="girl-section" class="hidden">
@@ -34,15 +46,15 @@
         <div>
             <ul class="border">
                 <li><img class="images" src="images/gold2.jpeg" onclick="showSection('girlgold')" alt="Gold"></li>
-                <li style="color: white;" >Gold</li>
+                <li style="color: black;" >Gold</li>
             </ul>
             <ul class="border">
                 <li><img class="images" onclick="showSection('girlsilver')" src="images/silver.jpg" alt="Silver"></li>
-                <li style="color: white;" >Silver</li>
+                <li style="color: black;" >Silver</li>
             </ul>
             <ul class="border">
                 <li><img class="images" src="images/platinum2.png" onclick="showSection('girlplatinum')" alt="Platinum"></li>
-                <li style="color: white;" >Platinum</li>
+                <li style="color: black;" >Platinum</li>
             </ul>
         </div>
     
@@ -96,17 +108,17 @@
     <div id="girlgold" class="hidden">
         <h1>Gold Items for Girls</h1>
         <div class="slideshow-container">
-           
+           <figure>
                 <img class="slide" src="images/girlgold.jpg" alt="Jewelry 1">
                 <img class="slide" src="images/girlgold2.jpg" alt="Jewelry 2">
                 <img class="slide" src="images/girlgold3.jpg" alt="Jewelry 3">
-                
+            </figure>
         </div>  
         
         <h2>Chains</h2>   
         <div class="ornaments">
             <ul>
-                <li><img class="girlgolds" src="images/gold_chain.jpeg" alt="Chains"></li>
+                <li><img class="girlgolds" onclick="showSection('girlchain')" src="images/gold_chain.jpeg" alt="Chains"></li>
                 <li>Chain</li>
             </ul>
             <ul>
@@ -514,49 +526,238 @@
                 <li>Heavy Ring</li>
             </ul>
         </div>
+        <h2>Studs</h2>
         <div class="ornaments">
-        <button>Studs</button>
+            <ul>
+                <li><img class="girlgolds" src="images/pltstuds.jpg" alt="Chains"></li>
+                <li>Stud Ring</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/pltstudstone.jpg" alt="Chains"></li>
+                <li>Stone Stud</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/pltstudsimple.jpg" alt="Chains"></li>
+                <li>Simple Stud</li>
+            </ul>
         </div>
+        <h2>Bracelet</h2>
         <div class="ornaments">
-        <button>Bracelet</button>
+            <ul>
+                <li><img class="girlgolds" src="images/pltbraceletboys.jpg" alt="Chains"></li>
+                <li>Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/pltchainbraceletboys.jpg" alt="Chains"></li>
+                <li>Chain Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/pltbraceletsimpleboys.jpg" alt="Chains"></li>
+                <li>Simple Bracelet</li>
+            </ul>
         </div>
         <button onclick="showSection('boy-section')">Back</button>
     </div>
 
     <!-- Gold Section for Couples -->
     <div id="couplegold" class="hidden">
-        <h2>Gold Items for Couples</h2>
-        <button>Chains</button>
-        <button>Rings</button>
-        <button>Bracelets</button>
+        <h1>Gold Items for Couples</h1>
+        <h2>Chains</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/cimagesgold.jpg" alt="Chains"></li>
+                <li>Chains</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/cchainsgold2.jpg" alt="Chains"></li>
+                <li>Chains</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/cchainsgold3.png" alt="Chains"></li>
+                <li>Chains</li>
+            </ul>
+        </div>
+        <h2>Rings</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/cringgold1.jpg" alt="Chains"></li>
+                <li>Rings</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/cringgold2.jpg" alt="Chains"></li>
+                <li>Rings</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/cringgold3.jpg" alt="Chains"></li>
+                <li>Rings</li>
+            </ul>
+        </div>
+        <h2>Bracelet</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/cbracelet3.jpg" alt="Chains"></li>
+                <li>Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/cbracelet2.jpg" alt="Chains"></li>
+                <li>Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/cbracelet1.jpg" alt="Chains"></li>
+                <li>Bracelet</li>
+            </ul>
+        </div>
         <button onclick="showSection('couple-section')">Back</button>
     </div>
 
     <!-- Silver Section for Couples -->
     <div id="couplesilver" class="hidden">
-        <h2>Silver Items for Couples</h2>
-        <button>Chains</button>
-        <button>Rings</button>
-        <button>Bracelets</button>
+        <h1>Silver Items for Couples</h1>
+        <h2>Chains</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/silverchain2.jpg" alt="Chains"></li>
+                <li>Chains</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverchain1.jpg" alt="Chains"></li>
+                <li>3D Chains</li>
+            </ul>
+           
+            <ul>
+                <li><img class="girlgolds" src="images/silverchain3.jpg" alt="Chains"></li>
+                <li>Simple Chains</li>
+            </ul>
+        </div>
+        <h2>Rings</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/silverring1.jpg" alt="Chains"></li>
+                <li>Rings</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverring3.jpg" alt="Chains"></li>
+                <li>Stone Rings</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverring2.jpg" alt="Chains"></li>
+                <li>Simple Rings</li>
+            </ul>
+            
+        </div>
+        <h2>Bracelet</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/silverbracelet1.jpg" alt="Chains"></li>
+                <li>Ring Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverbracelet2.jpg" alt="Chains"></li>
+                <li>Chain Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverbracelet3.jpg" alt="Chains"></li>
+                <li>Simple Bracelet</li>
+            </ul>
+        </div>
         <button onclick="showSection('couple-section')">Back</button>
     </div>
 
     <!-- Platinum Section for Couples -->
     <div id="coupleplatinum" class="hidden">
-        <h2>Platinum Items for Couples</h2>
-        <button>Chains</button>
-        <button>Rings</button>
-        <button>Bracelets</button>
+        <h1>Platinum Items for Couples</h1>
+        <h2>Chains</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/silverchain2.jpg" alt="Chains"></li>
+                <li>Chains</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverchain1.jpg" alt="Chains"></li>
+                <li>3D Chains</li>
+            </ul>
+        
+            <ul>
+                <li><img class="girlgolds" src="images/silverchain3.jpg" alt="Chains"></li>
+                <li>Simple Chains</li>
+            </ul>
+        </div>
+        <h2>Rings</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/silverring1.jpg" alt="Chains"></li>
+                <li>Rings</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverring3.jpg" alt="Chains"></li>
+                <li>Stone Rings</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverring2.jpg" alt="Chains"></li>
+                <li>Simple Rings</li>
+            </ul>
+            
+        </div>
+        <h2>Bracelet</h2>
+        <div class="ornaments">
+            <ul>
+                <li><img class="girlgolds" src="images/silverbracelet1.jpg" alt="Chains"></li>
+                <li>Ring Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverbracelet2.jpg" alt="Chains"></li>
+                <li>Chain Bracelet</li>
+            </ul>
+            <ul>
+                <li><img class="girlgolds" src="images/silverbracelet3.jpg" alt="Chains"></li>
+                <li>Simple Bracelet</li>
+            </ul>
+        </div>
         <button onclick="showSection('couple-section')">Back</button>
     </div>
+    <div id="girlchain" class="hidden">
+        <div class="girlgoldsider">
+            <h2>Navigation</h2>
+            <ul>
+                <li>Home</li>
+                <li>Girl Hub sector</li>
+                <li>Girl Ornaments</li>
+            </ul>
+        </div>
+        <div class="girlgoldimages">
+            <ul>
+                <li><img src="images/gold_chain.jpeg" alt="Chains"></li>
+                <h3>Chain Name</h3>
+                <h3>Estimated Cost : 12345</h3>
+            </ul>
+            <ul>
+                <li><img src="images/gold_chain1_1.jpeg" alt="Chains"></li>
+                <h3>Chain Name</h3>
+                <h3>Estimated Cost : 12345</h3>
+            </ul>
+            <ul>
+                <li><img src="images/gold_chain1_2.jpeg" alt="Chains"></li>
+                <h3>Chain Name</h3>
+                <h3>Estimated Cost : 12345</h3>
+            </ul>
+            <ul>
+                <li><img src="images/gold_chain1_3.jpeg" alt="Chains"></li>
+                <h3>Chain Name</h3>
+                <h3>Estimated Cost : 12345</h3>
+            </ul>
+        </div>
+    </div>
+    
     <!-- JavaScript to control visibility -->
+     
      <script>
             // Function to show a specific section
         function showSection(section) {
             // Hide all sections
             document.querySelectorAll('div[id]').forEach((div) => {
                 div.classList.add('hidden');
-            });
+            });  
+           
 
             // Show the selected section
             document.getElementById(section).classList.remove('hidden');
@@ -583,7 +784,7 @@
             }
         };
 
-        function showNextSlide() {
+        /*function showNextSlide() {
             if (!slides || slides.length === 0) return; // Prevent errors if no slides exist
 
             let currentSlide = slides[index];
@@ -609,7 +810,7 @@
                 slide.style.opacity = i === 0 ? "1" : "0"; // Reset slides
             });
             intervalId = setInterval(showNextSlide, 3000);
-        }
+        }*/
 
 
 </script>
